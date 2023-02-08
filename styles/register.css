@@ -1,0 +1,53 @@
+form {
+    display: grid;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid #7a5784;
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+}
+form input, form select {
+    background: #fff;
+    border: 1px solid #7a5784;
+}
+form button {
+    background: #7a5784;
+    color: #fff;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+}
+  form button:hover {
+    background: #ecbe7b;
+}
+
+label {
+    padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+}
+
+input:focus {
+    outline: 3px solid #ecbe7b;
+}
+
+@media (min-width: 400px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
+
+  input,
+  button {
+    grid-column: 2 / 3;
+  }
+  }
